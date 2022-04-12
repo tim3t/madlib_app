@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 from stories import story
 
 app=Flask(__name__)
 app.config['SECRET_KEY'] = "abc123"
-debug = DebugToolbarExtension(app)
+# debug = DebugToolbarExtension(app)
 
 @app.route('/')
 def home_page():
